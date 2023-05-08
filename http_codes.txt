@@ -1,0 +1,16 @@
+# 200s - All good
+200 => okay
+201 -> created okay
+
+# 300s
+301 -> Permanent Redirect
+302 -> Temp Redirect
+
+# 400s - User did something wrong
+401 => Not Authorized (i know who you are but you cant do this)
+403 => Not Authenticated (i dont know who you are aka maybe not logged in)
+404 => Not found
+422 => Unprocessable Entity (tried to create something, but you didnt give me the right info)
+
+# Dev did something wrong
+500 => server error

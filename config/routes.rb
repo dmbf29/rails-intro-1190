@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # le wagon convention -> pages controller to handle all "static" pages
+  # HTTP_VERB '/path', to: 'controller#action', as: :prefix (aka nickname)
+  # get '/', to: 'pages#home', as: :home
+  root to: 'pages#home' # gives prefix automatically
+  get '/about', to: 'pages#about', as: :about
+  get '/contact', to: 'pages#contact', as: :contact
 end
+
+# when 1 then @pages_controller.about
